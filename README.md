@@ -6,9 +6,9 @@
 
 ## Información del Alumno
 
-**Nombre y Apellido:** [Escribir aquí tu nombre y apellido]
+**Nombre y Apellido:** Mateo Gomez
 
-**Curso:** [Escribir aquí tu curso]
+**Curso:** 4° Informatica
 
 **Fecha de entrega:** [Escribir aquí la fecha de entrega]
 
