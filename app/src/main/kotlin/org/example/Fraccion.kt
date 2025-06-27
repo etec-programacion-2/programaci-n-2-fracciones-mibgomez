@@ -64,6 +64,32 @@ class Fraccion(
         return Fraccion(nuevoNumerador, nuevoDenominador).simplificar()
     }
 
+    operator fun times(otra: Fraccion): Fraccion {
+        if (this.denominador == 0 || otra.denominador == 0) {
+            throw IllegalArgumentException("No se puede operar con fracciones inválidas")
+        }
+        
+        val nuevoNumerador = this.numerador * otra.numerador
+        val nuevoDenominador = this.denominador * otra.denominador
+        
+        return Fraccion(nuevoNumerador, nuevoDenominador).simplificar()
+    }
+
+    operator fun div(otra: Fraccion): Fraccion {
+        if (this.denominador == 0 || otra.denominador == 0) {
+            throw IllegalArgumentException("No se puede operar con fracciones inválidas")
+        }
+        
+        if (otra.numerador == 0) {
+            throw ArithmeticException("No se puede dividir por una fracción con numerador cero (división por cero)")
+        }
+        
+        val nuevoNumerador = this.numerador * otra.denominador
+        val nuevoDenominador = this.denominador * otra.numerador
+        
+        return Fraccion(nuevoNumerador, nuevoDenominador).simplificar()
+    }
+
     override fun toString(): String {
         return "$numerador / $denominador"
     }
