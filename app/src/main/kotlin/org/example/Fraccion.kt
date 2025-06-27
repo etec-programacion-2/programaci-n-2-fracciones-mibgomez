@@ -27,7 +27,7 @@ class Fraccion(
         return "$numerador / $denominador"
     }
 
-    override fun mostrar(): String {
+    fun mostrar(): String {
         return "$numerador / $denominador"
     }
 }
