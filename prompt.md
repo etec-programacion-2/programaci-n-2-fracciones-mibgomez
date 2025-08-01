@@ -595,7 +595,7 @@ Simplificación automática: Todos los resultados se reducen a su mínima expres
 Manejo de signos: Correcta propagación de signos negativos
 Precisión: No hay pérdida de precisión (se trabaja con enteros)
 Validación completa: Prevención de estados inválidos
-_________________________________________________________________________________________________
+_____________________________________________________________________________________________________________
 
 ### Etapa 4: Validaciones
 Objetivo: Implementar validaciones adicionales y métodos de utilidad para completar la funcionalidad de la clase.
@@ -1027,5 +1027,4 @@ fun main() {
     println("f1.hashCode() == f5.hashCode() ? ${f1.hashCode() == f5.hashCode()}")
 }
 
-_________________________________________________________________________________________________
-
+_____________________________________________________________________________________________________________
